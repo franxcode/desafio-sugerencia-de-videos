@@ -4,65 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
     <!-- My own styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Desafío - Sugerencia de Vídeos</title>
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <div class="text-center mx-auto">
-            <img src="./assets/img/107735.png" alt="video" class="img-fluid">
+            <img src="assets/img/107735.png" alt="video" class="img-fluid">
             <div class="d-inline-block">
                 <h2 class="font-weight-bold my-5 ml-3">Sugerencias de Vídeos</h2>
             </div>
         </div>
-        <div class="accordion" id="accordionExample">
-            <div class="card">
+        <div class="accordion" id="accordionMenu"> -->
+            <!-- Music Accordion -->
+            <!-- <div class="card">
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseMusic" aria-expanded="true" aria-controls="collapseMusic">
                     Música
                   </button>
                 </h2>
               </div>
-          
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div id="collapseMusic" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionMenu">
                 <div class="card-body text-center">
-                  <iframe id="musica" width="560" height="315" src="..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe id="musica" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
-            </div>
-            <div class="card">
+            </div> -->
+            <!-- Movies Accordion -->
+            <!-- <div class="card">
               <div class="card-header" id="headingTwo">
                 <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseMovies" aria-expanded="false" aria-controls="collapseMovies">
                     Película
                   </button>
                 </h2>
               </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div id="collapseMovies" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMenu">
                 <div class="card-body text-center">
                   <iframe id="peliculas" width="560" height="315" src="..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
-            </div>
-            <div class="card">
+            </div> -->
+            <!-- Series Accordion -->
+            <!-- <div class="card">
               <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeries" aria-expanded="false" aria-controls="collapseSeries">
                     Serie
                   </button>
                 </h2>
               </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div id="collapseSeries" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMenu">
                 <div class="card-body text-center">
                   <iframe id="series" width="560" height="315" src="..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
-        </div>
+            </div>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="text-center mx-auto">
+                    <img src="assets/img/107735.png" alt="video" class="img-fluid">
+                    <div class="d-inline-block">
+                        <h2 class="font-weight-bold my-5 ml-3">Sugerencias de Vídeos</h2>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionMenu">
+                    <!-- Music Accordion -->
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseMusic" aria-expanded="true" aria-controls="collapseMusic">
+                            Música
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseMusic" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionMenu">
+                        <div class="card-body text-center">
+                          <iframe id="musica" width="450" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Movies Accordion -->
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseMovies" aria-expanded="false" aria-controls="collapseMovies">
+                            Película
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseMovies" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMenu">
+                        <div class="card-body text-center">
+                          <iframe id="peliculas" width="450" height="315" src="..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Series Accordion -->
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeries" aria-expanded="false" aria-controls="collapseSeries">
+                            Serie
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseSeries" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMenu">
+                        <div class="card-body text-center">
+                          <iframe id="series" width="450" height="315" src="..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-center mx-auto">
+                    <img src="assets/img/Controls.png" alt="video" class="img-fluid">
+                    <div class="d-inline-block">
+                        <h2 class="font-weight-bold my-5 ml-3">Controles</h2>
+                    </div>
+                    <div class="card">
+                        <label for="urlVideo" class="css__label">Inserta URL del vídeo:</label>
+                        <input type="text" id="urlVideo" name="url" class="form-control" placeholder="https://www.youtube.com/embed/YODCM26JXOY">
+                    </div>
+                    <div class="card">
+                        <label for="id" class="css__label">Indica la categoría donde quieres colocar el vídeo:</label>
+                        <select name="id" id="idCategory" class="form-control">
+                            <option value="Music">Música</option>
+                            <option value="Movies">Película</option>
+                            <option value="Series">Series</option>
+                        </select>
+                    </div>
+                    <div class="card">
+                        <label for="setInicio" class="css__label">Indica en que minuto quieres que inicie el vídeo:</label>
+                        <input type="number" id="setInicio" name="setInicio" class="form-control" placeholder="50">
+                    </div>
+                    <div class="card">
+                    <button type="submit" id="btnSubmit" class="btn btn-primary mt-3">Aplicar</button>
+                    </div>
+                </div>
+            </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
